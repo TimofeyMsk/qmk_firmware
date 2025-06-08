@@ -1,3 +1,15 @@
+# TimofeyMsk !!!
+
+For Q8: branch master
+For K11Max: branch wireless_playground
+
+Frequently commnds:
+qmk compile -kb keychron/q8/ansi_encoder -km TimofeyMsk
+
+
+
+
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
