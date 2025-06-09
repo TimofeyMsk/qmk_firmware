@@ -20,6 +20,8 @@
 #include QMK_KEYBOARD_H
 #include "keychron_common.h"
 
+// Q8 TimofeyMsk
+
 // clang-format off
 
 enum layers{
@@ -47,10 +49,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [WIN_FN1] = LAYOUT_ansi_69(
         KC_GRV,  KC_F1,    KC_F2,    KC_F3,   KC_F4,   KC_F5,    KC_F6,                    KC_F7,    KC_F8,   KC_F9,  KC_F10,   KC_F11,   KC_F12,   KC_BRK,            				 KC_PSCR,
-   LALT(KC_ESC),  _______, KC_QUOT,  KC_MINS, KC_EQL,  LSA(KC_9),  	     KC_HOME,LCTL(KC_LEFT),KC_UP,LCTL(KC_RGHT), KC_PGUP,  KC_NO,  KC_NO,  KC_NO,                    KC_INS,
+   LALT(KC_ESC),  LCTL(KC_Q), KC_QUOT,  KC_MINS, KC_EQL,  LSA(KC_9),  	     KC_HOME,LCTL(KC_LEFT),KC_UP,LCTL(KC_RGHT), KC_PGUP,  KC_NO,  KC_NO,  KC_NO,                    KC_INS,
         _______,  KC_COLN, KC_LPRN,  KC_RPRN, KC_UNDS,  LSA(KC_8),     			LCTL(KC_BSPC), KC_LEFT,KC_DOWN,KC_RGHT,KC_END, KC_PGDN,  KC_NO,                   				  KC_END,
         _______,     LCTL(KC_Z),LCTL(KC_X),LCTL(KC_C),LCTL(KC_V), KC_GRV,         KC_BSPC, KC_DEL , KC_LBRC,  KC_RBRC, KC_NO,   LCTL(KC_SLSH),  KC_NO,                     KC_PGUP,
-        _______, _______,  _______,           KC_LSFT,           _______,  	      KC_BSPC,           KC_RSFT,                _______,                   	    KC_HOME, KC_PGDN,     KC_END),
+        _______, _______,  _______,           KC_LSFT,           LWIN(KC_SPC),  	      LWIN(KC_SPC),           KC_RSFT,                _______,                   	    KC_HOME, KC_PGDN,     KC_END),
 
     [SERVICE] = LAYOUT_ansi_69(
         _______,   KC_BRID,  KC_BRIU,  KC_TASK, KC_FLXP, RGB_VAD, RGB_VAI, 				KC_MPRV,  KC_MPLY, KC_MNXT, KC_MUTE,  KC_VOLD,  KC_VOLU,  _______,           				      _______,
@@ -64,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,  KC_NO, KC_QUOT,  KC_MINS, KC_EQL,  KC_NO,  	     KC_HOME,LOPT(KC_LEFT),KC_UP, LOPT(KC_RGHT), KC_PGUP,  KC_NO,  KC_NO,  KC_NO,                                    KC_INS,
         _______,  KC_COLN, KC_LPRN,  KC_RPRN, KC_UNDS,  KC_NO,     			LOPT(KC_BSPC), KC_LEFT,KC_DOWN,KC_RGHT,KC_END, KC_PGDN,  KC_NO,                         				  KC_END,
         _______,     LCMD(KC_Z),LCMD(KC_X),LCMD(KC_C),LCMD(KC_V), KC_GRV,         KC_BSPC, KC_DEL , KC_LBRC,  KC_RBRC, KC_NO,   LCMD(KC_SLSH),  KC_NO,                     KC_PGUP,
-_______, _______,  _______,           _______,           _______,  	      KC_BSPC,           _______,                _______,                   	    KC_HOME, KC_PGDN,     KC_END)};
+	    _______, _______,  _______,           _______,           _______,  	      KC_BSPC,           _______,                _______,                   	    KC_HOME, KC_PGDN,     KC_END)};
 
 	
 #if defined(ENCODER_MAP_ENABLE)
