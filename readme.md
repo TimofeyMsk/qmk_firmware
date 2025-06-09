@@ -1,10 +1,32 @@
 # TimofeyMsk !!!
+Keymaps suit for Python and SQL in IDE DataSpell (IntelliJ IDEA).
 
-For Q8: branch master
-For K11Max: branch wireless_playground
+For Keychron Q8 use branch `master`  
+For Keychron K11 Max use branch `wireless_playground`  
 
 Frequently commnds:
-qmk compile -kb keychron/q8/ansi_encoder -km TimofeyMsk
+* `qmk compile -kb keychron/q8/ansi_encoder -km TimofeyMsk`
+  
+If it's not some files for ChibiOS (error message: `platforms/chibios/platform.mk:102: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.mk: No such file or directory
+make: *** Нет правила для сборки цели «lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.mk»`)  
+Use this:
+```
+    QMK использует git-подмодули для некоторых зависимостей, в том числе для chibios-contrib. Если вы клонировали репозиторий без инициализации подмодулей, необходимые файлы не будут загружены.
+    
+    Решение:
+    
+    1. В корне репозитория QMK выполните:
+    
+    bash
+    git submodule update --init --recursive
+    Эта команда загрузит все подмодули, включая chibios-contrib, и создаст нужные файлы.
+    
+    2. Повреждённые или неполные файлы в папке lib/chibios-contrib
+    Если подмодули были инициализированы, но файлы отсутствуют, возможно, стоит обновить подмодули:
+    
+    bash
+    git submodule update --recursive --remote
+```
 
 
 
