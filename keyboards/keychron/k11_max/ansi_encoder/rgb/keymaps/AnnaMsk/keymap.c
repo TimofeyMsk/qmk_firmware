@@ -52,11 +52,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    LALT(KC_ESC),  LCTL(KC_Q), KC_QUOT,  KC_MINS, KC_EQL,  LSA(KC_9),  	            KC_HOME,LCTL(KC_LEFT),KC_UP,LCTL(KC_RGHT), KC_PGUP,  KC_NO,  KC_NO,  KC_NO,                    KC_INS,
         _______,  KC_COLN, KC_LPRN,  KC_RPRN, KC_UNDS,  LSA(KC_8),     			     LCTL(KC_BSPC), KC_LEFT,KC_DOWN,KC_RGHT,KC_END, KC_PGDN,  KC_NO,                   				  KC_END,
         _______,     LCTL(KC_Z),LCTL(KC_X),LCTL(KC_C),LCTL(KC_V), KC_GRV,         KC_BSPC, KC_DEL , KC_LBRC,  KC_RBRC, KC_NO,   LCTL(KC_SLSH),  KC_NO,                     KC_PGUP,
-        _______, _______,  _______,           KC_LSFT,           _______,  	      LWIN(KC_SPC),           KC_RSFT,                _______,                   	    KC_HOME, KC_PGDN,     KC_END),
+        _______, _______,  _______,           KC_LSFT,           LWIN(KC_SPC),       LWIN(KC_SPC),           KC_RSFT,                _______,                   	    KC_HOME, KC_PGDN,     KC_END),
 
     [SERVICE] = LAYOUT_69_ansi(
         _______,   KC_BRID,  KC_BRIU,  KC_TASK, KC_FILE, RGB_VAD, RGB_VAI, 				KC_MPRV,  KC_MPLY, KC_MNXT, KC_MUTE,  KC_VOLD,  KC_VOLU,  _______,           				      _______,
-        RGB_TOG,   RGB_MOD,  RGB_VAI,  RGB_HUI, RGB_SAI, RGB_SPI,  		     			_______,  _______, _______, _______,  _______,  _______,  _______,  _______,                      _______,
+        RGB_TOG,   RGB_MOD,  RGB_VAI,  RGB_HUI, RGB_SAI, RGB_SPI,  		     			BT_HST1,  BT_HST2, BT_HST3,   P2P4G,  _______,  _______,  _______,  _______,                      _______,
         _______,   RGB_RMOD, RGB_VAD,  RGB_HUD, RGB_SAD, RGB_SPD,          				_______,  _______, _______, _______,  _______,  _______,  _______,                                DM_PLY1,
         _______,             _______,  _______, _______, _______, BAT_LVL,  			BAT_LVL,  NK_TOGG, _______, _______,  _______,  _______,  _______, 		             DM_REC1,
         _______, _______,  _______,          _______,             _______,  				_______,           _______,           			_______,   			    DM_RSTP, DM_REC2,     DM_PLY2),
