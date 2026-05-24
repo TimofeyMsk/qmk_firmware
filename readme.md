@@ -1,3 +1,5 @@
+* `qmk compile -kb keychron/k11_max/ansi_encoder/rgb -km TimofeyMsk`
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
