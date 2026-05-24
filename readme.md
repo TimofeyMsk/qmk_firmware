@@ -1,11 +1,12 @@
 # TimofeyMsk !!!
-Keymaps suit for Python and SQL in IDE DataSpell (IntelliJ IDEA).
+Keymaps suit for Python and SQL in PyCharm and VSCode.
 
 For Keychron Q8 use branch `master`  
 For Keychron K11 Max use branch `wireless_playground`  
 
-Frequently commnds:
+Frequently commands for compilation:
 * `qmk compile -kb keychron/q8/ansi_encoder -km TimofeyMsk`
+* `qmk compile -kb keychron/k11_max/ansi_encoder/rgb -km TimofeyMsk`
   
 If it's not some files for ChibiOS (error message: `platforms/chibios/platform.mk:102: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.mk: No such file or directory
 make: *** Нет правила для сборки цели «lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.mk»`)  
